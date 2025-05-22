@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>정보를 입력해주세요</title>
+        <style>
+        #문구 {
+        display: none;
+        color: red;
+        font-size: 48px;
+        font-weight: bold;
+        }
+        </style> 
+    </head>
+
+    <body>
+        <div id="내용">
+
+        <h1>정보를 입력해주세요!</h1>
+
+        <label>
+            이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" placeholder="이름">
+        </label>
+        <br>
+    
+        <label>
+            생년월일
+            <input type="text" id="birth" placeholder="ex: 2000.01.01">
+        </label>
+        <br>
+
+        <label>거주지역</label>
+    <select id="city">
+    <option value="">-- 선택하세요 --</option>
+    <option value="서울">서울</option>
+    <option value="부산">부산</option>
+    <option value="대구">대구</option>
+    <option value="인천">인천</option>
+    <option value="광주">광주</option>
+    <option value="대전">대전</option>
+    <option value="울산">울산</option>
+    <option value="세종">세종</option>
+    <option value="경기도">경기도</option>
+    <option value="강원도">강원도</option>
+    <option value="충청북도">충청북도</option>
+    <option value="충청남도">충청남도</option>
+    <option value="전라북도">전라북도</option>
+    <option value="전라남도">전라남도</option>
+    <option value="경상북도">경상북도</option>
+    <option value="경상남도">경상남도</option>
+    <option value="제주도">제주도</option>
+    </select>
+<br>
+<br>
+<button onclick="제출()">확인</button>
+</div>
+
+<div id="문구" font-size: 48px; color="red">우하하 넌 속았지롱! 너의 정보는 내가 가져가마..</div>
+
+        <script>
+            function 제출() {
+                const name=document.getElementById("name").value.trim();
+                const birth=document.getElementById("birth").value.trim();
+                const city=document.getElementById("city").value;
+
+                if (name && birth && city) {
+                    document.getElementById("내용").style.display="none";
+                    document.getElementById("문구").style.display="block";
+                }
+                else {
+                    alert("모든 항목을 입력해 주세요.");
+                }
+            }
+        </script>
+    </body>
+</html>
