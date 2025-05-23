@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>평점 조사</title>
+</head>
+<body>
+    <header>
+        <h1>평점 조사</h1> <h3>최고마라탕 고양점</h3>
+            <p>저희 가게를 이용해주셔서 대단히 감사드립니다.
+                <br>조사에 성실히 임해주신 분께는 추첨을 통해 감사의 의미로 5,000원 할인권을 드리고 있습니다.
+            </p>
+    </header>
+    <hr>
+    <main>
+    <form>
+    <fieldset>
+        <legend>개인정보</legend>
+        <br>
+            <label>
+                닉네임 <input type="text" name="name">
+            </label>
+            <br>
+            <br>
+            <!--성별. 
+            그냥 "성별"이라고만 쓰면 스크린리더기에서는 그룹명이라고 생각 안하고 그냥 텍스트라고 생각한다고 한다. 
+            그래서 찾아봤는데 fieldset 태그나 aria-labelledby라는 속성을 사용하면 웹 접근성 측면에서 가장 좋다고 하는데, 너무 복잡하다고 느껴졌다.
+            그래서 보니까 이렇게 span으로 묶는 게 실무에서도.. 실용적으로 타협해서 많이 쓴다고 한대서 이렇게 했다. 잘 모르겠다..-->
+            <span>성별</span> 
+            <br>
+            <label>
+                <input type="radio" name="sex" value="male">남성
+            </label>
+            <label>
+                <input type="radio" name="sex" value="female">여성
+                </label>
+            <br>
+            <!--연령대-->
+            <br>
+            <span>연령대</span>
+            <br>
+            <label><input type="radio" name="age" value="teen">10대</label>
+            <br>
+            <label><input type="radio" name="age" value="twenty">20대</label>
+            <br>
+            <label><input type="radio" name="age" value="thirty">30대</label>
+            <br>
+            <label><input type="radio" name="age" value="fourty">40대</label>
+            <br>
+            <label><input type="radio" name="age" value="fifty">50대</label>
+            <br>
+            <label><input type="radio" name="age" value="other">그 외</label>
+    </fieldset>
+<br><br>
+    <fieldset>
+        <legend>설문 내용</legend>
+        <br>
+        <fieldset>
+            <p>메뉴판</p>
+            <ul>
+                <li>마라탕</li>
+                <li>마라샹궈</li>
+                <li>꿔바로우</li>
+                <li>칠리새우</li>
+        </ul>
+        </fieldset>
+        <p>1. 저희 가게에서 먹어본 적 있는 메뉴를 모두 골라주세요.</p>
+        <label><input type="checkbox" name="menu" value="마라탕">마라탕</label>
+        <label><input type="checkbox" name="menu" value="마라샹궈">마라샹궈</label>
+        <label><input type="checkbox" name="menu" value="꿔바로우">꿔바로우</label>
+        <label><input type="checkbox" name="menu" value="칠리새우">칠리새우</label>
+        <hr>
+        <p>2. 가장 <span style="color: red;">맛있었던</span> 메뉴는 무엇인가요?</p>
+        <label><input type="radio" name="bestmenu" value="마라탕">마라탕</label>
+        <label><input type="radio" name="bestmenu" value="마라샹궈">마라샹궈</label>
+        <label><input type="radio" name="bestmenu" value="꿔바로우">꿔바로우</label>
+        <label><input type="radio" name="bestmenu" value="칠리새우">칠리새우</label>
+        <label><input type="radio" name="bestmenu" value="best_none">없음</label>
+        <hr>
+        <p>3-1. 가장 <span style="color: red;">별로였던</span> 메뉴는 무엇인가요?</p>
+        <label><input type="radio" name="worstmenu" value="마라탕">마라탕</label>
+        <label><input type="radio" name="worstmenu" value="마라샹궈">마라샹궈</label>
+        <label><input type="radio" name="worstmenu" value="꿔바로우">꿔바로우</label>
+        <label><input type="radio" name="worstmenu" value="칠리새우">칠리새우</label>
+        <label><input type="radio" name="worstmenu" value="worst_none">없음</label>
+        <br><br>
+        <p>3-2. ('3-1'에 답하신 경우) 최고의 음식으로 보답하지 못해 죄송합니다. 어떤 부분에서 별로라고 느껴지셨나요?</p>
+        <label><input type="checkbox" name="worstreason" value="취향이 아님">취향이 아님</label>
+        <label><input type="checkbox" name="worstreason" value="간이 맞지 않음">간이 맞지 않음</label>
+        <label><input type="checkbox" name="worstreason" value="조리 상태가 적절하지 않음">조리 상태가 적절하지 않음</label>
+        <label><input type="checkbox" name="worstreason" value="음식이 신선하지 않음">음식이 신선하지 않음</label>
+        <label><input type="checkbox" name="worstreason" value="기타">기타
+            <input type="text" name="worstreason_other" placeholder="이유를 입력해주세요.">
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+                <legend>기타 의견</legend>
+                <p>저희 가게에 전달하고 싶은 내용이 있으신가요? (생략 가능)</p>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </fieldset>
+    <br>
+        <input type="submit">
+    </form>
+    </main>
+<br><br>
+    <footer>
+        <p>고객님의 귀한 시간 내주셔서 감사합니다. <br>
+        더 나은 서비스로 보답드리겠습니다. <br>
+    -최고마라탕 고양점 &nbsp;&nbsp;사장 민 현 서-</p>
+    </footer>
+</body>
+</html>
