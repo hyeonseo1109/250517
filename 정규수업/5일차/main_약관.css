@@ -1,0 +1,13 @@
+.약관 {
+    padding: 30px;
+    color: rgb(150, 150, 150);
+    display: flex;
+    flex-direction: column;
+    margin: 0 25%;
+}
+
+.약관 > label {
+    display: flex;
+
+    font-size: clamp(10px, 2vw, 13px);
+}
