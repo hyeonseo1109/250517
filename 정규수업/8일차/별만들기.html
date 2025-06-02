@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        /**
+ * JavaScript 3일차 과제
+ * 별 찍기
+
+     *        i=1 첫번째 줄 띄어쓰기 2개 n-i, 별 하나 
+    ***       i=2 두번째 줄 띄어쓰기 1개 n-i, 별 3개 
+   *****      i=3 세번째 줄 띄어쓰기 0개 : n-i, 별 5개 : 2i-1
+
+   */
+
+let n = prompt(`몇 줄짜리 별 피라미드 만들고 싶어? 숫자를 입력해봐`);
+
+// 여기에 작성해주세요.
+
+
+for (let i=1; i<=n; i++) {
+  let spaces = ' '.repeat(n-i);         
+  let stars = '🩵'.repeat(2*i-1);       
+  console.log(spaces + stars)
+  document.write(spaces + stars + "<br>");              
+}
+    </script>
+    
+</body>
+</html>
