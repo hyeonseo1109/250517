@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        .귀여워잉{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="살찐보노보노.jpeg" alt="살찐보노보노피규어 탐난다">
+    <br>
+    <button id="add">Add Style</button>
+    <button id="remove">Remove Style</button>
+    <button id="toggle">Toggle Style</button>
+
+    <script>
+        const img = document.querySelector("img")
+        const addBtn = document.querySelector("#add")
+        const removeBtn = document.querySelector("#remove")
+        const toggleBtn = document.querySelector("#toggle")
+
+        console.log(img.classList)
+
+        addBtn.addEventListener("click", function(){
+            img.classList.add("귀여워잉")
+            console.log(img.classList.contains("귀여워잉"))
+        })
+        removeBtn.addEventListener("click", function(){
+            img.classList.remove("귀여워잉")
+            console.log(img.classList.contains("귀여워잉"))
+        })
+        toggleBtn.addEventListener("click", function(){
+            img.classList.toggle("귀여워잉")
+            console.log(img.classList.contains("귀여워잉"))
+        })
+    </script>
+    
+</body>
+</html>
