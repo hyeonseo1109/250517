@@ -1,0 +1,33 @@
+! <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="draw">추첨</button>
+    <p id="number"></p>
+
+    <script>
+        const button = document.getElementById("draw")
+        const p = document.getElementById("number")
+
+        let rn = Math.random()
+        /*console.log(Math.floor(rn*10)) +1  */       //rn*10은 랜덤 숫자의 가장 마지막 숫자, +1은 가장 처음 숫자. 
+                                                //random이 0~1 사이의 숫자를 뽑으니 0을 빼려면 1을 더함. 
+
+        const MAX_NUM = 10
+        const MIN_NUM = 1
+        
+        button.addEventListener("click", function(){
+
+            p.textContent = Math.floor(rn * MAX_NUM) + MIN_NUM
+        })
+
+        
+    </script>
+    
+</body>
+</html>
