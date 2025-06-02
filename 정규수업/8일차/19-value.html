@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="talk">
+    <input id="push" type="button" value="push">  <!--버튼 지정-->
+
+    <script>
+        
+        const input = document.getElementById("talk")   //html의 id가 talk인 애를 데려와서
+        const button = document.getElementById("push")  //html의 id가 button인 애를 데려와서
+
+        input.addEventListener("keyup", function(event){    // input에 이벤트 기능 추가 (키보드자판을 눌렀다 뗐을 때,  다음의 기능을 추가함)
+            console.log(event.target.value)             //콘솔창에 매개변수(event)의 value(사용자의 입력값)를 띄워라
+        })
+
+        button.addEventListener("click", function() {       //button에 이벤트 기능 추가 (클릭했을 때, 다음의 기능을 추가함)
+            const p = document.createElement("p")       // 상수 p 지정. (내용: 문서에 p 태그 추가)
+            p.textContent = input.value                //상수 p의 내용을  input상수의 입력값으로 지정하겠다.
+            document.body.append(p)                 //문서의 Body에 상수 p의 내용을 추가하겠다. 
+        })
+    </script>
+    
+</body>
+</html>
