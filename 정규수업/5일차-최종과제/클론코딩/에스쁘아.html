@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="compatible" content="IE=edge">
+    <link href="header.css" rel="stylesheet">
+    <link rel="preload" href="/resources/css/font/YoonGothicPro740.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="/resources/css/font/36660E_0_0.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>에스쁘아</title>
+</head>
+<body>
+    <header><!--사진 좌우 스크롤?, 로고, 메뉴, 로그인상태, 돋보기, TOP버튼은 화면 고정-->
+        <div class="배너">
+            <div class="위쪽바">
+                <div class="왼쪽">
+                    <div class="로고"><em>espoir</em></div>
+                    <div class="메뉴">MENU > </div>
+                    <span class="햄버거메뉴">
+                        <input type="button" id="햄버거메뉴" value="&#9776;">
+                    </span>
+                </div>
+                <div class="오른쪽">
+                    <div class="로그인상태">
+                        <ul>
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                        </ul>
+                    </div>
+                    <span class="돋보기">
+                        <input type="button" id="돋보기" value="&#128269;">
+                    </span>
+                </div>
+            </div>
+        
+            <div class="화장품">
+                <div class="화장품설명">달콤한 물복숭아부터 로지빛 쿨복숭아까지 복숭아 조각 모음집</div>
+                <div class="화장품이름">노웨어 립스틱 바밍 글로우</div>
+                <div class="구매버튼">
+                    <button class="보러가기버튼">Show More</button>
+                    <button class="사러가기버튼">Shop Now</button>
+                </div>
+                <div class="화장품키워드">#클린광 #복숭아광 #복숭아트리오</div>
+            </div>
+        </div>
+            <button class="top">TOP</button>
+    </header>
+
+    <main>
+        <section class="section_1"> <!--퍼스널서비스-->
+            <div class="아티스트이미지">
+                <img src="https://www.espoir.com/resources/images/service/consulting/artist_w.png" alt="아티스트 이미지">
+            </div>
+            <div class="퍼스널">
+                <h3>Customized Makeup Service</h3>
+                <h1>"Creator"</h1>
+                <h3>퍼스널 서비스</h3>
+                <p>에스쁘아 크리에이션 스토어 연남에서 진행되는 예약제 퍼스널 맞춤 메이크업 서비스입니다.</p>
+                <button>예약하기</button>
+            </div>
+        </section>
+
+        <section class="section_2"> <!--신상품-->
+            <div class="신상품">New & Best</div> <!--섹션 좌우로 나눠서 윈터사진/제품진열-->
+                <div class="윈터사진"></div>
+                <div class="제품진열">
+                    <div class="제품">
+                        <div class="제품사진"></div>
+                        <div class="제품설명">
+                            <p>비벨벳 커버 쿠션 SPF42 PA++</p>
+                            <br>
+                            <p>40,000원</p>
+                            <a href="#" class="더보기">Show more</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section_3"> <!--왼쪽으로 움직이는 로고-->
+            <div class="움직이는로고"></div>
+            <div class="가게사진"></div>
+            <div class="상표사진"></div>
+            <a href="#" class="View more">View more</a>
+        </section>
+
+        <section class="section_4"> <!--Hot Tok-->
+            <h1>Hot Tok</h1>
+            <div class="화장품스토리"><!--좌우 스크롤-->
+                <div class="화장품스토리사진"></div>
+                <div class="화장품스토리사진"></div>
+                <div class="화장품스토리사진"></div>
+                <div class="화장품스토리사진"></div>
+                <div class="화장품스토리사진"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="공지사항">
+            <ul>
+                <li>공지사항</li>
+                <li>에스쁘아 개인정보처리방침 변경 안내</li>
+                <li>MORE</li>
+            </ul>
+        </div>
+        <div class="검정배경">
+            <div class="검정윗부분">
+                <div class="검정메뉴">
+                    <ul>
+                        <li>비회원주문조회</li>
+                        <li>매장 찾기</li>
+                        <li>브랜드 소개</li>
+                        <li>멤버십</li>
+                        <li>사이트맵</li>
+                    </ul>
+                </div>
+                <div class="검정퍼스널">
+                    <h2>PERSONAL SERVICE</h2>
+                    <p>전문 크리에이터가 </p>
+                    <p>'나만의 얼굴 쉐입에 맞는 메이크업'을 </p>
+                    <p>도와드리는 퍼스널 컨설팅 서비스입니다.</p>
+                </div>
+                <div class="고객센터">
+                    <p>고객센터</p>
+                    <h2>080 619 8888</h2>
+                    <p>상담시간 09:00 ~ 18:00 <br>
+                    (*주말/공휴일 휴무)</p>
+                </div>
+                <div class="sns버튼">
+                    <input type="button" id="인스타">
+                    <input type="button" id="페이스북">
+                    <input type="button" id="트위터">
+                    <input type="button" id="카카오톡">
+                    <input type="button" id="블로그">
+                    <input type="button" id="이메일">
+                </div>
+            </div>
+            <div class="검정아래부분">
+                <div class="검정아래부분메뉴">
+                    <ul>
+                        <li>서비스 이용약관</li>
+                        <li><strong>개인정보처리방침</strong></li>
+                        <li>영상기기 처리방침</li>
+                        <li>이메일 무단수집 거부</li>
+                        <li>전자공고</li>
+                    </ul>
+                </div>
+                <div class="회사소개">
+                    <p>(주)에스쁘아 대표이사 : 이연정    본사 : 서울특별시 용산구 한강대로 100 (한강로2가) 6층</p>
+                    <p>사업자번호 : 104-86-58598    통신판매업신고번호 : 제 2017-서울용산-1293호</p> <a href="#" id="사업자정보확인">사업자 정보 확인</a> 
+                    <p>개인정보보호책임자: 이연정     고객상담: 080-619-8888      이메일: esporimail@espoir.com     호스팅제공자 : (주)에스쁘아</p>  
+                    <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 이니시스 구매안전 서비스(에스크로)를 이용하실 수 있습니다.</p> <a href="#" id="서비스가입사실확인">서비스 가입사실 확인</a>
+                    <br>
+                    <p>Copyright &copy; 2023 espoir. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

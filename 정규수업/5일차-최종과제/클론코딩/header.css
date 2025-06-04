@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-family: 'yoon', 'Marian', 'roboto', '돋움', 'AppleGothic', Dotum, sans-serif;
+    letter-spacing: -2px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.로고 {
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+    display: flex;
+    left: 20px;
+    top: 30px;
+    height: auto;
+    width: auto;
+    font-size: 45px;
+    margin: 5px 10px;
+    letter-spacing: 1px;
+    font-family: 'franklin-gothic-urw';
+}
+
+.위쪽바{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.왼쪽 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.오른쪽 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.로그인상태 {
+    display: flex;
+    
+    
+}
+.로그인상태 ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 10px 20px;
+
+}
+
+.메뉴 {
+    display: flex;
+    top: 60px;
+    margin-left: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.햄버거메뉴 {
+    display: none;
+}
+#햄버거메뉴 {
+    background-color: transparent;
+    border: 0;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+#돋보기 {
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    margin: 5px 20px;
+}
+
+
+.배너 {
+    background-image: url("https://images.espoir.com/UPLOAD/UPLOAD_IMAGE/MAINBANNER01/202504/IMG1745iFW557983201.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: left center;
+    height: 734px;
+    width: 100%;
+    position: relative;
+    }
+
+
+    .화장품 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 35px;
+        position: absolute;
+        top: 350px;
+        right: 0;
+        z-index: 3;
+        max-width: 100%;
+        width: 40vw;
+    }
+
+    .화장품이름 {
+        font-size: 40px;
+        font-family:'yoon','Marian','roboto','돋움','AppleGothic', Dotum, sans-serif;
+        font-weight: 900;
+        letter-spacing: -2.5px;
+        margin: 5px 0;
+        word-break: keep-all; /*줄 넘어갈 때 단어 단위로 넘어가게 함*/
+    }
+    .화장품설명 {
+        font-size: 24px;
+        word-break: keep-all;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .구매버튼 {
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .보러가기버튼 {
+        background-color: rgb(202, 0, 0);
+        color: white;
+        height: 50px;
+        width: 220px;
+        border: 0;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .사러가기버튼 {
+        background-color: rgb(202, 0, 0);
+        color: white;
+        height: 50px;
+        width: 220px;
+        border: 0;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .화장품키워드 {
+        margin: 10px 0;
+    }
+
+    .top {
+        position: fixed;
+        right: 0;
+        margin-right: 15px;
+        transform: rotate(-90deg);
+        background-color: transparent;
+        border: 0;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+
+@media screen and (max-width: 1024px) {
+    .로고 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .햄버거메뉴 {
+        display: flex;
+    }
+    .메뉴{
+        display: none;
+    }
+    .로그인상태 {
+        display: none;
+    }
+    .화장품이름{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .화장품이름{
+        font-size: 30px;
+    }
+    .배너 {
+    background-image: url("https://images.espoir.com/UPLOAD/UPLOAD_IMAGE/MAINBANNER01/202504/IMG1745ABN557995673.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: left center;
+    height: 734px;
+    width: 100%;
+    position: relative;
+    }
+    .화장품{
+        display: flex;
+        margin-left: 20px;
+        position: absolute;
+        top: 500px;
+        left: 0;
+        z-index: 3;
+    }
+
+    .화장품설명 {
+        font-size: 16px;
+    }
+    .화장품키워드 {
+        font-size: 14px;
+    }
+}
+
+.section_1 {
+    width: 100%;
+    height: 100%;
+}
+
+.아티스트이미지 {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 30px; 
+    height: 400px;
+    width: calc(100% - 60px);
+    position: relative;
+    
+}
+.아티스트이미지 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*아티스트이미지 미디어쿼리부터 ㄱㄱ
