@@ -1,10 +1,12 @@
 num_list = [];
 function solution(num_list) {
-    let mul = 1;
-    let plus = 0;
-    for ( const num of num_list ) {
-        mul *= num;
-        plus += num;
-    }
-    return mul > plus**2 ? 0 : 1;
+    const plus = num_list.reduce((a, b) => {
+        return a+b ;
+    }, 0);
+    const multiply = num_list.reduce( (a, b) => {
+        return a*b;
+    }, 1);
+    return multiply > plus**2 ? 0 : 1;
 }
+solution(num_list);
+
