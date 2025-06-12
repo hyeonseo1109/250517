@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.박스{
+    height: 100%;
+    background-color: #3e70c6;
+}
+

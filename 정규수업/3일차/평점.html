@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>평점 조사</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,10 +20,12 @@
             <p>저희 가게를 이용해주셔서 대단히 감사드립니다.
                 <br>조사에 성실히 임해주신 분께는 추첨을 통해 감사의 의미로 5,000원 할인권을 드리고 있습니다.
             </p>
+            <a href="https://velog.io/@alsgustj/posts" target="_blank">최고마라탕 사이트 바로가기
+            </a>
     </header>
     <hr>
     <main>
-    <form>
+    <form action="none.com" method="post">
     <fieldset>
         <legend>개인정보</legend>
         <br>
@@ -26,14 +37,14 @@
             <!--성별. 
             그냥 "성별"이라고만 쓰면 스크린리더기에서는 그룹명이라고 생각 안하고 그냥 텍스트라고 생각한다고 한다. 
             그래서 찾아봤는데 fieldset 태그나 aria-labelledby라는 속성을 사용하면 웹 접근성 측면에서 가장 좋다고 하는데, 너무 복잡하다고 느껴졌다.
-            그래서 보니까 이렇게 span으로 묶는 게 실무에서도.. 실용적으로 타협해서 많이 쓴다고 한대서 이렇게 했다. 잘 모르겠다..-->
+            그래서 보니까 이렇게 span으로 묶는 게 실무에서도.. 실용적으로 타협해서 많이 쓴다고 한대서 이렇게 했다...-->
             <span>성별</span> 
             <br>
             <label>
-                <input type="radio" name="sex" value="male">남성
+                <input type="radio" name="gender" value="male">남성
             </label>
             <label>
-                <input type="radio" name="sex" value="female">여성
+                <input type="radio" name="gender" value="female">여성
                 </label>
             <br>
             <!--연령대-->
@@ -65,6 +76,29 @@
                 <li>칠리새우</li>
         </ul>
         </fieldset>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>두부</th>
+                    <th>고춧가루</th>
+                    <th>숙주</th>
+                    <th>연근</th>
+                    <th>땅콩</th>
+                    <th>소고기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>국산</td>
+                    <td>베트남산</td>
+                    <td>국산</td>
+                    <td>중국산</td>
+                    <td>국산</td>
+                    <td>호주산</td>
+                </tr>
+            </tbody>
+        </table>
         <p>1. 저희 가게에서 먹어본 적 있는 메뉴를 모두 골라주세요.</p>
         <label><input type="checkbox" name="menu" value="마라탕">마라탕</label>
         <label><input type="checkbox" name="menu" value="마라샹궈">마라샹궈</label>
@@ -98,7 +132,7 @@
     <fieldset>
                 <legend>기타 의견</legend>
                 <p>저희 가게에 전달하고 싶은 내용이 있으신가요? (생략 가능)</p>
-                <textarea rows="3" cols="30" name="comment"></textarea>
+                <textarea rows="3" cols="30" name="comment" placeholder="의견을 입력해주세요."></textarea>
             </fieldset>
     <br>
         <input type="submit">

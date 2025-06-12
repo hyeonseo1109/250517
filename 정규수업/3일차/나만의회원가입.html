@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>나만의 회원가입 폼</title>
+    <link rel="stylesheet" href="나만의회원가입.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<body>
+    <div class="box">
+    <header>
+    <div class="머릿말">
+    <h1>맛동산 나라에 오신 것을 환영합니다!</h1>
+    <audio controls>
+        <source src="맛동산노래.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+    </audio>
+    <p>맛동산 먹고 즐거운 파티</p>
+    </div>
+    <hr>
+    <br>
+
+    </header>
+
+
+    <main>
+        <form action="none.com" method="post">
+
+            <!--placeholder로만 쓰면 스크린리더기가 이해 못할 수도 있으니 대체텍스트를 붙여주면 좋다고 한다.. -->
+            <input type="text" name="id" placeholder="아이디" aria-label="아이디">
+            <br>
+            <input type="password" name="password" placeholder="비밀번호" aria-label="비밀번호">
+            <br>
+            <input type="password" name="password" placeholder="비밀번호확인" aria-label="비밀번호확인">
+            <br>
+            <input type="text" name="code" placeholder="추천코드" aria-label="추천코드">
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="프로필사진">
+            <label><input type="file" name="image">
+            <br>회원 프로필 사진을 등록해주세요!</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <input type="text" name="name" placeholder="이름" aria-label="이름">
+            <br>
+            <input type="text" name="phone" placeholder="전화번호" aria-label="전화번호">
+            <br>
+            <input type="email" name="email" placeholder="이메일" aria-label="이메일">
+            <br>
+            <input type="date" name="birth" placeholder="생년월일" aria-label="생년월일">
+            <br>
+            <div class="gender">
+                <label>
+                    여
+                    <input type="radio" name="gender" id="female">
+                </label> 
+                &nbsp;
+                <label>
+                    남
+                    <input type="radio" name="gender" id="male">
+                </label>
+                <label>
+                    해당없음
+                    <input type="radio" name="gender" id="other">
+                </label>
+            </div>
+
+<hr>
+<br>
+        <button>가입하기</button>
+        <button>취소</button>
+    </form>
+</main>
+<br><br><br><br>
+<footer>
+    <약관>
+    <br><br>
+    <label><input type="checkbox"> (필수)과자가 딱딱하니 섭취시 주의하세요!</label>
+    <br>
+    <label><input type="checkbox"> (필수)너무 많이 먹으면 밥 못먹으니까 조금씩만 드세요!</label>
+    <br><br><br>
+    <a href="https://www.ht.co.kr/">해태제과 바로가기</a>
+    <br><br><br>
+</footer>
+</div>
+</body>
+</html>

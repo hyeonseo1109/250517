@@ -47,6 +47,7 @@ function generateNumbers() {
   */
 }
 
+
 function displayNumbers(numbers, winningNumbers = []) {
   const showNumber = document.createElement('div');
   showNumber.classList.add('number-set');

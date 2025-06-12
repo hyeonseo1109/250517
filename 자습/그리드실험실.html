@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="compatible" content="IE=edge">
+    <title>3열 박스 Grid</title>
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 1줄에, 한칸이 총 3개 = 3열 */
+        gap: 10px; 
+        width: 600px;
+        margin: 50px auto;
+    }
+
+    .box {
+        background-color: skyblue;
+        text-align: center;
+        padding: 30px 0;
+        font-size: 20px;
+        border: 1px solid #aaa;
+    }
+    </style>
+</head>
+
+<body>
+        <div class="grid-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+
+</body>
+</html>

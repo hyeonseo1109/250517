@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="compatible" content="IE=edge">
+    <title>Sticky Header Demo</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+        height: 800px;
+        width: 100%;
+        }
+
+        .header1 {
+        position: sticky;
+        top: 0;  /*sticky를 넣어도 어디에 고정할지를 안넣으면 고정 안되고
+        걍 flow처럼 흐름*/
+        background: rgb(40, 180, 255);
+        padding: 15px;
+        font-size: 24px;
+        }
+
+        .header2 {
+        position: sticky;
+        top: 0;
+        background: rgb(102, 201, 122);
+        padding: 15px;
+        font-size: 24px;
+        }
+        
+        .content {
+            padding: 20px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header1">HEADER 1 (Sticky)</div>
+
+    <section class="content">
+        <p>내용이 많아서 스크롤을 내려도</p>
+        <p>header1은 계속 따라다님</p>
+        <p>.......</p>
+        <p>그러다가 header2가 오면</p>
+    </section>
+
+    <div class="header2">HEADER 2 (Sticky)</div>
+
+    <section class="content">
+    <p> HEADER 1은 사라지고, 이제 HEADER 2가 자리를 이어받아서 따라옴.</p>
+    </section>
+
+</body>
+</html>

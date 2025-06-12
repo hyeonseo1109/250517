@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/정규수업/8일차/소수판별기.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/정규수업/8일차/소수판별기.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/정규수업/9일차/lotto.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/정규수업/9일차/lotto.html"
+        }
+    ]
+}

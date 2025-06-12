@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>채팅방 만들기</title>
+    <link href="chat.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <main class="chat-screen">
+            <section class="chat-screen_bar">
+                <div class="user">
+                    <div class="user_column">
+                        <div class="user_pic"></div>
+                    </div>
+                    <div class="user_column wide">
+                        <div class="user_info">
+                            <p class="user_nick">민은서</p>
+                            <p class="user_count">2</p>
+                        </div>
+                        <div class="user_buttons">
+                            <input type="button" class="button" value="검색" />
+                            <input type="button" class="button" value="서랍" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <form class="chat-form">
+            <section class="chat-form_field">
+                <textarea class="chat-form_msg"></textarea>
+                    <input type="submit" value="전송" class="chat-form_bt" />
+            </section>
+        </form>
+    </div>
+</body> 
+</html>

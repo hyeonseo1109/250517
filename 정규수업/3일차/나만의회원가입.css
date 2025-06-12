@@ -1,0 +1,72 @@
+.box{
+    background-color: wheat;
+    padding: 15px;
+    margin: 20%;
+    border-radius: 50px;
+    }
+
+input{
+    padding: 10px;
+    border-radius: 13px;
+    border: 1px;
+    margin: 10px auto;
+    font-weight: 1;
+    padding: 10px 30px;
+    }
+    
+.머릿말{
+    font-family: "Jua", sans-serif;
+}
+
+body {
+    background-image: url("맛동산일러스트.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-weight: 1;
+    text-align: center;
+    }
+
+h1{
+    color: rgb(150, 106, 47);
+}
+
+p{
+    color: rgb(206, 162, 103);
+}
+    
+
+button{
+    font-weight: 1;
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid grey;
+    background-color: rgb(196, 158, 112);
+    color:rgb(255, 255, 255)
+    }
+
+hr{
+    border: 0.5px solid rgb(156, 110, 26);
+}
+
+
+.gender label {
+    margin: 0 10px;
+    }
+    
+.약관박스 {
+    text-align: center;
+}
+
+.약관항목 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.버튼주머니 {
+    display: flex; /*가로로 쭉 정렬*/
+    justify-content: center; /* 가로 가운데 정렬 */
+    gap: 10px; /* 버튼 사이 여백 */
+    }
+

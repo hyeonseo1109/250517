@@ -1,0 +1,44 @@
+*{
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 20px;
+}
+
+p{font-weight: 100;}
+
+ul{font-weight: 100;}
+
+body { 
+    background-image: url("water.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+.box {
+    background-color: white; 
+    width: 800px; 
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 30px;
+    }
+
+h2{
+    font-size: 35px;
+    color:rgb(0, 94, 255);
+    font-weight: 900;
+    }
+
+.연파랑{
+    color:rgb(99, 172, 255);
+    }
+
+.진파랑{
+        color:rgb(42, 113, 255);
+    }
+
+#me{
+    border-radius: 300px;
+    width: 20em;
+    margin: 20px 20px 20px 40px;
+    }
+        
