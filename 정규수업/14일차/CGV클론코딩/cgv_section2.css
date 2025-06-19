@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 960px;
+    justify-content: space-between;
+}
+
+.광고부분 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.세로광고1 {
+    background-image: url("https://adimg.cgv.co.kr/images/202506/fureru/160x300.jpg");
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    display: flex;
+    width: 160px;                      
+    height: 300px;  
+}
+
+.세로광고2 {
+    background-image: url("https://adimg.cgv.co.kr/images/202409/B2B/SS/160x300.png");
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    display: flex;
+    width: 160px;                      
+    height: 300px;  
+}
+
+
+.영화정보부분 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+}
+
+.날짜변경 {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 10px 0 0 0;
+}
+
+.날짜변경 > p {
+    margin: 0;
+    padding: 0;
+}
+
+.날짜 {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 25px;
+    color: rgb(107, 107, 107);
+}
+
+.관람안내 {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 10px;
+    font-size: 15px;
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.영화정보 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+}
+
+.영화하나 {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+}
+
+.한줄 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.빨강연령{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 34, 0);
+    color: white;
+    border-radius: 3px;
+    font-weight: 900;
+}
+.주황연령{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 122, 13);
+    color: white;
+    border-radius: 3px;
+    font-weight: 900;
+}
+.노랑연령{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 204, 0);
+    color: white;
+    border-radius: 3px;
+    font-weight: 900;
+}
+.초록연령{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(24, 161, 0);
+    color: white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.영화제목 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.상영중 {
+    font-size: 13px;
+    border: 2px solid rgb(80, 137, 234);
+    padding: 0 10px;
+    color: rgb(80, 137, 234);
+}
+
+.영화설명 {
+    color: gray;
+    font-size: 15px;
+}
+
+.상영관별 > p {
+    color: #444;
+    font-size: 13px;
+}
+.시간선택 {
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid rgb(176, 176, 176);
+    width: 80px;
+    margin: 10px 2px 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.상영관별 {
+    display: flex;
+    flex-direction: column;
+}
+
+.시간선택감싸기 {
+    display: flex;
+    flex-direction: row;
+}
+
+.상영시간 {
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.남은좌석 {
+    display: flex;
+    color: rgb(17, 89, 170);
+    font-size: 15px;
+}
+
+
+.공지 {
+    color: gray;
+    margin: 20px 0 300px 0;
+    font-size: 15px;
+}
+
+/* 4. 날짜 할 수 있으면 date로 */
