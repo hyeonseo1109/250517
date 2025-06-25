@@ -73,7 +73,7 @@ for( let op of operator ) {
         console.log(`firstOperand: ${firstOperand}`);
         oper = op.textContent;
         console.log(`oper: ${oper}`);
-        isOpered = true;    //연산됐는가? 네
+        isOpered = true;    //연산된 상태인가? yes
         선택된수 = [];  //이거 없으면 초기화안돼서 소수점이 두 개 이상 안들어감
         
     });
@@ -138,13 +138,13 @@ for (let btn of number) {
                 break;
                     
             case "/":
-                결과 = secondOperand !== 0 ? firstOperand / secondOperand : "오류";
+                결과 = secondOperand !== 0 ? firstOperand / secondOperand : "err";
                 창.textContent = 결과;
                 console.log(`결과: ${결과}`);
                 break;
                 }
 
-        if (pe === "%") {
+        if (pe === "%") {   //변수 pe에 %가 저장이 됐다면
                 if (secondOperand === firstOperand ) {
                     결과 = firstOperand * 0.01;
                     창.textContent = 결과;
@@ -160,13 +160,18 @@ for (let btn of number) {
                 return;
         }
 
-        plusMinus.addEventListener("click", () => {
+        
+    });
+plusMinus.addEventListener("click", () => {
             결과 = 창.textContent * -1;
             창.textContent = 결과;
             선택된수.push(결과);
-            console.log(`음양변환" ${결과}`)
-        })
-    });
+            console.log(`음양변환" ${결과}`);
+        });
+
+
+
+
 
 
     /*------------광택 이동-----------*/
@@ -180,7 +185,7 @@ let x2 = 1000;
 function moving1 () {
     x1 += 10;
     const screenWidth = window.innerWidth;
-    const baOneWidth = baOne.offsetWidth;
+    const baOneWidth = baOne.offsetWidth;   //요소의 실제 너비
 
     if ( x1 > screenWidth ) {
         x1 = -1000;
@@ -211,7 +216,7 @@ let twoVisible = true;
 
 setInterval(() => {
     baOne.style.opacity = oneVisible ? "0.5" : "0.8";
-    oneVisible = !oneVisible;
+    oneVisible = !oneVisible;   //1초마다 토글.
 
     baTwo.style.opacity = twoVisible ? "0.8" : "0.5";
     twoVisible = !twoVisible;

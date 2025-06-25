@@ -1,0 +1,86 @@
+
+.wrapper {
+
+    transform-style: preserve-3d;
+    animation: jump-spin 3s ease-in-out infinite;
+}
+
+.heart {
+    position: relative;
+    width: 101px;
+    height: 100px;
+    background: red;
+    transform: rotate(-45deg);
+    margin: 50px;
+}
+
+.heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+} 
+
+
+
+.miniHeart {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: red;
+    transform: rotate(-45deg);
+    margin: 100px;
+}
+
+.miniHeart::before, .miniHeart::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: red;
+    border-radius: 50%;
+}
+
+.miniHeart::before {
+    top: -40px;
+    left: 0;
+}
+
+.miniHeart::after {
+    top: 0;
+    left: 40px;
+}
+
+@keyframes jump-spin {
+    0% {
+        transform: rotateY(0deg) translate(0, 0);
+    }
+
+    25% {
+        transform: rotateY(180deg) translate(-50px, -80px);
+    }
+
+    50% {
+        transform: rotateY(360deg) translate(-100px, 0px);
+    }
+
+    75% {
+        transform: rotateY(540deg) translate(-150px, -80px);
+    }
+
+    100% {
+        transform: rotateY(720deg) translate(-200px, 0);
+    }
+} 

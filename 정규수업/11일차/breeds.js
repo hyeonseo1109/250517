@@ -9,7 +9,7 @@ const input = document.getElementById("filter-text")
 const button = document.getElementById("filter-button")
 const select = document.getElementById("filter-select")
 const tothetop = document.getElementById("tothetop")
-
+const resetButton = document.querySelector('#reset-button');
 const currentDogs = []
 
 window.addEventListener("load", function(){

@@ -11,6 +11,30 @@
             "name": "http://127.0.0.1:3000/정규수업/9일차/lotto.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/정규수업/9일차/lotto.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/정규수업/21일차/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/정규수업/21일차/index.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/정규수업/21일차/style.css",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/정규수업/21일차/style.css"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/정규수업/17일차/calculator/index.js",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/정규수업/17일차/calculator/index.js"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/깃git복사본/12_fe_git/index_12.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/깃git복사본/12_fe_git/index_12.html"
         }
     ]
 }
