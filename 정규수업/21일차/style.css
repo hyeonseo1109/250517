@@ -3,15 +3,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'NoonnuBasicGothicRegular';
+    font-weight: 100;
+    line-height: 1.4;
+}
+@import url('https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+/* 
+@font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(206, 255, 180), rgb(182, 248, 147) 60%,rgb(155, 228, 115));
 }
 
 .container {
     display: flex;
-    border: 1px solid #666;
+    border: 3px solid #666;
     height: auto;
     width: 350px;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(129, 161, 0, 0.5);
+    border-radius: 20px;
 }
 
 .logobox {
@@ -22,6 +46,9 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(254, 37, 37);
+    box-shadow: 0 2px 10px rgb(154, 154, 154);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 
 }
 .logo {
@@ -33,7 +60,7 @@
     width: 150px;
 }
 .poket {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     height: 350px;
     width: 100%;
 }
@@ -76,8 +103,8 @@
     width: 140px;
     height: 100px;
     background: yellow;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    opacity: 0.8;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /*? 꼭짓점의 좌표를 (x y)로 나열함. */
+    opacity: 0.8;                                   /*? (첫 번째 꼭짓점, 두 번째, 세 번째) */
     position: relative;
     transform: rotate(-40deg);
     top: -15px;
@@ -95,6 +122,7 @@
     width: 200px;
     border-radius: 100px;
     border: 3px solid yellow;
+    box-shadow: 0 0 10px yellow;
     position: relative;
     top: -80px;
     left: 80px;
@@ -118,11 +146,32 @@
     100% {transform: translateY(10px);}
 }
 /*!-------------정보-----------*/
+#name {
+    font-weight: 500;
+}
+.css{
+    font-weight: 400;
+}
 .info {
     display: flex;
     align-self: flex-start;
-    margin: 30px;
     flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+}
+
+.po {
+    margin: 20px;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.poketmon {
+    box-shadow: inset 0 0 13px rgb(175, 175, 175);
+    margin: 10px;
+
+    border-radius: 20px;
 }
 
 /*!-----------버튼-----------*/
@@ -139,4 +188,8 @@
     width: 100px;
     text-align: center;
     border-radius: 50px;
+    user-select: none;
+    font-weight: 400;
+    background-color: #909090;
+    color: white;
 }
