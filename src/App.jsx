@@ -7,6 +7,14 @@ const Span = styled.span`
   font-size: 15px;
 `;
 
+const HiddenP = styled.p `
+  color: rgb(100, 180, 255);
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+`
+
 const BackgroundColorDiv = styled.div `
 	width: 100vw;
 	height: 100vh;	
@@ -14,7 +22,8 @@ const BackgroundColorDiv = styled.div `
   justify-content: center;
   align-items: start;
   gap: 50px;
-	background-color: rgb(
+  position: relative;
+	background-color: rgba(
 		${ (props) => props.input1 },
 		${ (props) => props.input2 },
 		${ (props) => props.input3 },
@@ -54,7 +63,7 @@ function App() {
 				min={0}
 				max={255}
 			/>
-      <Span>투명도: {input4}</Span>
+      <Span>A: {input4}</Span>
       <input
 				type="range"
 				value={input4}
@@ -63,7 +72,7 @@ function App() {
         step={0.01}
 				max={1}
 			/>
-
+      <HiddenP>까꿍!</HiddenP>
 		</BackgroundColorDiv>
 	);
 }
